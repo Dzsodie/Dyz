@@ -1,1 +1,298 @@
-empty page yet
+<!DOCTYPE html>
+<html>
+<title>Dzsodie</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("starwars pic.jpeg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">DZSODIE</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <!--<a href="#about" class="w3-bar-item w3-button">ABOUT</a>-->
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="#skills" class="w3-bar-item w3-button"><i class="fa fa-gamepad"></i> SKILLS</a>
+      <a href="#interests" class="w3-bar-item w3-button"><i class="fa fa-heart"></i> INTERESTS</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <!--<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>-->
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button">SKILLS</a>
+  <a href="#interests" onclick="w3_close()" class="w3-bar-item w3-button">INTERESTS</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header id="home">
+	<img class="w3-overlay w3-image w3-large" src="mac.jpg" alt="mac" width=100%  style="padding: 0px, margin: 0">
+  	<div class="w3-overlay w3-text-white">
+  		<span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
+   	 	<span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+    	<span class="w3-large">Stop wasting valuable time with procrastination.</span>
+    	<p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  	</div> 
+</header>
+
+<!-- About Section - "Mission" -->
+<div class="w3-container w3-light-grey" style="text-align: justify; padding:128px 16px 48px 16px" id="about">
+  <div class="w3-row-padding">
+    <div class="w3-col m6 ">
+      
+      <h3>.mission</h3>
+      <p>A real life hero, an actual <strong>Padawan</strong> who believes in humanity, love and the <strong>Force</strong> from within.</p><p>Being passionate to create something meaningful out of nothing and by that being capable of changing the world as we know it.</p><p>While enjoying the process, a <strong>Padawan</strong> always uses clean, elegant, efficient code, tries the best to creates responsive timely design and delivers unique value at every single occassion just in time.</p><p>May the Force be with you.
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="starwars pic.jpeg" alt="starwars" width="700" height="394">
+    </div>
+  </div>
+</div>
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-32"></div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-48" id="skills">
+  <div class="w3-row-padding">
+    <div class="w3-col m6" style="text-align: justify">
+      <h3>.skills</h3>
+      <p>Life is a constant change and development. <strong>Growth mindset</strong> is needed to be able to adapt.</p>
+      <p>Our most valuable relationships and our true friendships shape the person we are at present.</p>
+      <p>We learn everyday. While we share and use our knowledge our whole society gets shaped by us. </p>
+      <p>While building a <strong>better version of ourselves</strong> day by day we keep on constantly building a <strong>better future<strong>.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Arts</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:80%">80%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:65%">65%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photoshop</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+       <p class="w3-wide"><i class="fa fa-code w3-margin-right"></i>Java</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:20%">20%</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="w3-container w3-center w3-padding-48">
+  	<h3 class="w3-center">.knowledge</h3>
+  <div class="w3-center">
+    <div class="w3-quarter">
+      <i class="fa fa-camera w3-margin-bottom w3-jumbo w3-center"></i>
+       <!-- <p class="w3-large">Responsive</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-code w3-margin-bottom w3-jumbo"></i>
+      <!--<p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-html5 w3-margin-bottom w3-jumbo"></i>
+      <!--<p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-css3 w3-margin-bottom w3-jumbo"></i>
+      <!--<p class="w3-large">Support</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-facebook-official w3-margin-bottom w3-jumbo w3-center"></i>
+       <!-- <p class="w3-large">Responsive</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-wordpress w3-margin-bottom w3-jumbo"></i>
+      <!--<p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-tumblr-square w3-margin-bottom w3-jumbo"></i>
+      <!--<p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-git-square w3-margin-bottom w3-jumbo"></i>
+      <!--<p class="w3-large">Support</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>-->
+    </div>
+  </div>
+</div>
+
+<!-- Art Section -->
+<div class="w3-container w3-dark-grey" style="padding:48px 16px"  id="interests">
+  <h3 class="w3-center">.art</h3>
+  <p class="w3-center w3-large">There is beauty in creation</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="IMG_0078.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="tuscany">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="IMG_0076.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="beachyhead">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="IMG_0090.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="northernlight">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="IMG_5248.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="poppy field">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="IMG_0084.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="oceans">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="IMG_5253.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="dawn">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="IMG_5258.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="dusk">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="IMG_3382.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="lake">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Blog Section -->
+<div class="w3-container" style="padding:48px 16px" id="team">
+  <h3 class="w3-center">.my life as a junior java developer student</h3>
+  <p class="w3-center w3-large">Becoming was never easy. Instead of waiting for the result learn to enjoy the journey as a whole.</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <div class="w3-card">
+        <img src="IMG_3091.jpg" alt="meditation" style="width:100%">
+        <div class="w3-container">
+          <h3>Day 01</h3>
+          <p class="w3-opacity">Soft Skills Training</p>
+          <p>Monday Funday was filled with a lot of reveal and recognition. We are all different yet same in many ways. The two most interesting finding of the day were that exhaustion kills creativity and that good presentation is worth more than any bright idea.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-arrow-circle-down"></i> </button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6">
+      <div class="w3-card">
+        <img src="IMG_3364.jpg" alt="home again" style="width:100%">
+        <div class="w3-container">
+          <h3>Day 02</h3>
+          <p class="w3-opacity">HTML & CSS</p>
+          <p>Back to the memories from my youth. Wordpress was never a favorite. Hack into a site with your sleeves rolled up and your hands getting dirty gives joy and constant gratification during the process.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-arrow-circle-down"></i> </button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6">
+      <div class="w3-card">
+        <img src="IMG_3100.jpg" alt="deepwater" style="width:100%">
+        <div class="w3-container">
+          <h3>Day 03</h3>
+          <p class="w3-opacity">CLI, Terminal</p>
+          <p>Git is scary. Git is scary. Git is scary. Though you can divide and conquer bits by bits. Commit to the fact, that this is gonna be an awesome push from origin to the master. Even if a repository never seems to be fully filled up.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-arrow-circle-down"></i> </button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6">
+      <div class="w3-card">
+        <img src="IMG_3876.jpg" alt="overthecloud" style="width:100%">
+        <div class="w3-container">
+          <h3>Day 04</h3>
+          <p class="w3-opacity">Java</p>
+          <p>Yaaaaay! "Na, endlich sind wir da! Wunderschön und erstaunlich!" Bare in mind that anything that can be solved complex is missing the security of simplicity. The lesson of the day is that confidence was never found through google searches or reassurance in mistakes of others.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-arrow-circle-down"></i> </button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:48px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send a message:</p>
+      <div class="w3-container w3-center w3-col m3" style="padding:16px 16px"></div>
+      <form class="w3-center w3-col m6" action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+     
+</div>
+    
+ 
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-32">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p> Copyright © <a href="#home" title="me" target="_blank" class="w3-hover-text-grey">Dzsodie</a></p>
+</footer>
+ 
+
+
+</body>
+</html>
